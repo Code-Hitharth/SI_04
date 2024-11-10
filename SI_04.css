@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+h2 {
+  cursor: pointer;
+  color: #007bff;
+  border-bottom: 1px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.collapsible {
+  display: none;
+  padding: 10px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 10px;
+  }
+}

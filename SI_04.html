@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="SI_04.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="resume-container">
+      <header>
+        <h1>Hitharth Parashar</h1>
+        <p>B.Tech in CSE, Web Development Intern at Kaleidonex Technologies</p>
+      </header>
+
+      <section>
+        <h2 onclick="toggleSection('about')">About Me</h2>
+        <div id="about" class="collapsible">
+          <p>
+            I am Hitharth Parashar, a B.Tech student specializing in Computer
+            Science and Engineering. I have a strong foundation in programming
+            languages, including C, C++, Java, and Python, and I'm currently
+            gaining hands-on experience in web development through my internship
+            at Kaleidonex Technologies. I’m passionate about exploring new
+            technologies, solving complex problems, and continually advancing my
+            technical skills. My goal is to leverage my knowledge and experience
+            to build innovative, impactful software solutions.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 onclick="toggleSection('skills')">Skills</h2>
+        <div id="skills" class="collapsible">
+          <canvas id="skillsChart"
+            >Programming Languages: Proficient in C, C++, Java, and Python, with
+            a solid understanding of algorithms, data structures, and
+            problem-solving. Web Development: Hands-on experience in front-end
+            and back-end development as a Web Development Intern at Klaeidox
+            Technology, familiar with HTML, CSS, JavaScript, and responsive
+            design principles. Frameworks & Libraries: Basic knowledge of
+            frameworks and libraries like Bootstrap and jQuery for enhanced UI
+            and UX. Database Management: Understanding of SQL databases, with
+            experience in database design and integration. Tools & Version
+            Control: Skilled in using Git and GitHub for collaborative
+            development and project management.</canvas
+          >
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section>
+        <h2 onclick="toggleSection('experience')">Experience</h2>
+        <div id="experience" class="collapsible">
+          <p>Web Development Intern at Kaleidonex Technologies</p>
+          <video controls width="100%">
+            <source
+              src="Screen Recording 2024-11-09 102400.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section>
+        <h2 onclick="toggleSection('projects')">Projects</h2>
+        <div id="projects" class="collapsible">
+          <img
+            src="Screenshot 2024-11-09 194600.png"
+            alt="Project screenshot"
+            class="project-image"
+          />
+          <p>
+            <strong>Objective:</strong> Design and develop a visually appealing,
+            user-friendly, and responsive product page that adapts seamlessly
+            across various devices and screen sizes. The aim is to enhance the
+          </p>
+          <p>
+            <strong> ProjectOverview: </strong>
+            In the current digital landscape, a well-designed product page is
+            crucial for e-commerce success. This project focuses on creating a
+            responsive product page that provides potential customers with an
+            immersive shopping experience. It includes features like
+            high-quality images, detailed product descriptions, specifications,
+            pricing information, and interactive elements to ensure a smooth and
+            engaging user journey.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script src="SI_04.js"></script>
+  </body>
+</html>
